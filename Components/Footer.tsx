@@ -70,7 +70,7 @@ export default function Footer() {
             </motion.div>
           ))}
         </motion.div>
-        <div className="flex items-center justify-around w-full">
+        <div className="flex md:flex-row flex-col items-center justify-around w-full md:gap-0 gap-10">
           <div className="flex items-center flex-col gap-2">
             <div className="text-2xl">Software Developer</div>
             <div className="text-xl w-50 text-center">
@@ -114,7 +114,7 @@ export default function Footer() {
           </div>
           <div className="flex items-center flex-col gap-2">
             <div className="text-2xl">Social Media</div>
-            <div className="text-lg grid md:grid-cols-3 grid-cols-1 gap-2 mt-10">
+            <div className="text-lg grid grid-cols-3 gap-2 mt-10">
               {SocialMedia.map((item, index) => (
                 <Link key={index} href={item.link} target="_blank">
                   <div
